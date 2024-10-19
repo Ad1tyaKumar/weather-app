@@ -51,7 +51,7 @@ Mumbai, Chennai, Bangalore, Kolkata, Hyderabad)
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/Ad1tyaKumar/weather-app
-   cd weather-webapp
+   cd weather-app
    ```
 
 2. **Install Backend Dependencies**
