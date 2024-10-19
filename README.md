@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather Web App
+Hosted link: [https://weather-app-one-coral-74.vercel.app/](https://weather-app-one-coral-74.vercel.app/)
+
+## Overview
+
+Real-time data processing system to monitor weather conditions and provide summarized insights using rollups and aggregates. The system utilizes data from the OpenWeatherMap API. Built using Next.js, this project focuses on using the API appropriately to display the required information
+
+![image](https://github.com/user-attachments/assets/7c98650e-d0a7-4c56-9420-bf54abf1b460)
+
+## Features
+
+The system will continuously retrieve weather data from the OpenWeatherMap API. The API provides various weather parameters, and for this assignment, we will focus on:
+
+● main: Main weather condition (e.g., Rain, Snow, Clear)
+
+● temp: Current temperature in Centigrade
+
+● feels_like: Perceived temperature in Centigrade
+
+● dt: Time of the data update (Unix timestamp)
+
+The system continuously calls the OpenWeatherMap API at a configurable interval(e.g., every 5 minutes) to retrieve real-time weather data for the metros in India. (Delhi,
+Mumbai, Chennai, Bangalore, Kolkata, Hyderabad)
+
+● For each received weather update:
+
+  ○ Temperature values is converted from Kelvin to Celsius
+
+### Provide Daily Summaries
+### Provides visualisation of the data
+
+## Main Foucs
+
+● Functionality and correctness of the real-time data processing system.
+
+● Accuracy of data parsing, temperature conversion, and rollup/aggregate calculations.
+
+● Efficiency of data retrieval and processing within acceptable intervals.
+
+● Clarity and maintainability of the codebase.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js and npm installed
+- OpenWeather API Key
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Ad1tyaKumar/weather-app
+   cd weather-webapp
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Install Backend Dependencies**
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Create and initialize .env file**
+    Add the following fields in the .env file
+   ```bash
+   OPENWEATHERMAP_API_KEY={Your API Key}
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Start the Project**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Created By: Aditya Kumar
