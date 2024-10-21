@@ -27,9 +27,9 @@ Mumbai, Chennai, Bangalore, Kolkata, Hyderabad)
   ○ Temperature values is converted from Kelvin to Celsius
 
 ### Provide Daily Summaries
-### Provides visualisation of the data
+### Provides visualization of the data
 
-## Main Foucs
+## Main Focus
 
 ● Functionality and correctness of the real-time data processing system.
 
